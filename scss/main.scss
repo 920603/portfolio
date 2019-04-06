@@ -10,7 +10,7 @@ body {
   @include background;
   background-color: $primary-color;
   color: set-text-color($primary-color);
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -62,7 +62,7 @@ header {
 
 // TypeWriter Cursor
 .txt-type > .txt {
-  border-right: 0.2rem solid $secondary-color;
+  border-right: 0.2rem solid set-text-color($primary-color);
   animation: blink 0.8s steps(1) infinite;
 }
 
