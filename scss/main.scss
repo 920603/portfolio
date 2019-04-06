@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400');
 
 * {
   box-sizing: border-box;
@@ -11,7 +12,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
 
@@ -19,17 +20,17 @@ body {
 h1, 
 h2, 
 h3 {
-  margin: 0;
-  font-weight: 400;
+  margin: 0.4rem;
+  font-weight: 200;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 10), 0.5);
   }
 }
 
@@ -47,6 +48,30 @@ header {
 .text-secondary {
   color: $secondary-color;
 }
+
+.thick {
+  font-weight: 400;
+  display: block;
+}
+
+.social-media {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+// TypeWriter Cursor
+.txt-type > .txt {
+  border-right: 0.2rem solid $secondary-color;
+  animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+// TypeWriter Cursor End
 
 main {
   padding: 4rem;
