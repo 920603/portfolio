@@ -10,7 +10,7 @@ body {
   @include background;
   background-color: $primary-color;
   color: set-text-color($primary-color);
-  height: 100vh;
+  height: 100%;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
